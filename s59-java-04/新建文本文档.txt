@@ -1,0 +1,141 @@
+面向过程
+
+面向对象
+oop
+
+类        类是对象的抽象
+对象      对象是类的具体
+
+class
+
+如何定义一个类
+如何描述一个类
+
+属性    类有什么
+
+方法    做什么
+
+
+Animal   动物
+
+int  age
+String name 
+
+sleep()
+eat()
+sayHello()
+
+基本数据类型
+引用数据类型
+
+oop四个特性   
+抽象:
+封装 
+继承:拥有传递性 
+多态
+
+
+
+继承必须满足是什么的关系
+extends   扩展
+继承  java中类的继承是单继承   一个子类只能有一个父类  一个父类可以有多个子类
+子类可以继承父类的属性和方法（除了构造方法）
+
+Animal   父类
+Dog      子类
+
+
+重载    同一个类中  方法名相同  参数不同的方法
+重写    不同类中    方法名相同  参数相同的方法
+
+构造方法
+1.与类同名
+2.无返回类型
+3.不能通过对象调用只能通过new
+4.如果用户没有定义系统提供一个默认的无参的构造方法如果用户有定义系统不再提供
+5.构造方法不能被继承
+作用是给属性赋值
+
+
+
+this指的是当前对象   我
+类名  + @  + 哈希码  
+哈希码相同就是同一个对象  哈希码不同就不是同一个对象（这句话暂时是正确的）
+
+this    是一个对象     指的是当前对象
+super   就是一个关键字 能调用父类的属性和方法
+
+
+定义动物类(父类)
+int age
+String name
+
+sayHello(){
+	System.out.println("animal sayHello");
+}
+
+定义Dog extends
+
+int age 
+String name
+
+sayHello(){
+	System.out.println("dog sayHello");
+}
+
+sayHello(int mood){
+	if(mood==1){
+		System.out.println("旺旺");
+	}
+
+	if(mood==2){
+		System.out.println("呜~~~");
+	}
+}
+
+
+
+定义Dog
+
+int age 
+String name
+
+sayHello(){
+	System.out.println("cat sayHello");
+}
+
+
+1.定义类
+2.获取对象  new + 构造方法
+3.对象调用属性和方法
+4.面向对象的特点：抽象 封装  继承  多态
+抽象:关注需要的忽略不需要的
+继承:类和类的关系  单继承  由子类维护继承关系  子类名 + extends + 父类名
+子类可以继承父类的属性和方法（构造方法除外）
+5.构造方法
+7.this 当前对象  super关键字
+
+父类的引用指向子类对象
+Animal animal = new Dog();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
